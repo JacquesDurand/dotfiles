@@ -1,0 +1,19 @@
+dotfiles_dir = "dotfiles"
+import  = [ { path = "i3/i3.toml" } ]
+[settings]
+# Post install commands
+posthooks = [ ]
+
+# Vars hold  an array of paths to a toml file containing the variables to inject in your templatize dotfiles.
+vars = [
+
+]
+
+# A dot entry representing a symlink, `source` is relative to `dotfiles_dir`
+# and target shall be relative to $HOME directory or absolute.
+[settings.dots]
+alacritty = { source = "alacritty", target = ".config/alacritty" }
+zsh = { source = "zsh/zshrc", target = ".zshrc" }
+starship= {source = "starship/starship.toml", target = ".config/starship.toml"}
+gitconfig = { source = "git/gitconfig", target = ".gitconfig" }
+gitignore = { source = "git/gitignore", target = ".gitignore" }

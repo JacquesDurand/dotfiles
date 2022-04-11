@@ -1,0 +1,11 @@
+[profiles.i3]
+prehooks = ["echo installing i3 dotfiles"]
+posthooks = ["i3-msg reload"]
+
+[profiles.i3.dots]
+i3 =  { source = "i3/config", target = ".config/i3" }
+polybar =  { source = "i3/polybar", target = ".config/polybar" }
+onagre =  { source = "i3/onagre", target = ".config/onagre" }
+wallpapers = {source = "wallpapers/i3", target = ".config/wallpapers"}
+dunst = {source = "i3/dunst", target = ".config/dunst"}
+betterlockscreen = { source = "i3/betterlockscreen/betterlockscreenrc", target= ".config/betterlockscreenrc" }

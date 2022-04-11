@@ -1,0 +1,7 @@
+[user]
+        email = hugo.nicolas.hn@gmail.com
+        name = Hugo Nicolas
+[init]
+        defaultBranch = main
+[core]
+        excludesfile = /home/legging/.gitignore
