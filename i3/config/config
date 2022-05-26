@@ -31,6 +31,10 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
 
+# picom
+
+exec_always --no-startup-id picom
+
 # dunst
 exec killall -q dunst
 exec_always --no-startup-id dunst -config ~/.config/i3/dunst/dunstrc
@@ -197,7 +201,8 @@ gaps inner 8
 for_window [class=".*"] border pixel 1
 # Floating onagre
 for_window [class="onagre"] floating enable
+for_window [class="onagre"] border none
 for_window [class="pavucontrol"] floating enable
-
+for_window [class="bevy_2d_platformer"] floating enable
 exec_always --no-startup-id feh --bg-scale ~/.config/wallpapers/archcraft.png
 

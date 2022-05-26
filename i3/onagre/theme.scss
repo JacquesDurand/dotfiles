@@ -1,0 +1,78 @@
+.onagre {
+  --exit-unfocused: false;
+  height: 300px;
+  width: 450px;
+  --icon-theme: "Papirus";
+  --icon-size: 22px;
+  --font-family: "Fira Code Nerd Font";
+  font-size: 12px;
+  background: #222934;
+  color: #e06c75;
+  border-color: #e06c75;
+  border-radius: 10%;
+  border-width: 1px;
+  padding: 10px;
+
+  .container {
+    .search {
+      --spacing: 1;
+      background: #222934;
+      color: #e06c75;
+      border-color: #8ABEB7;
+      border-width: 1px;
+      padding: 6px;
+      --height: fill-portion 1;
+      .plugin-hint {
+        font-size: 12px;
+        color: #e06c75;
+        padding: 0;
+        border-width: 1px;
+        border-color: #8ABEB7;
+        border-radius: 5%;
+        background: #4c566a;
+        --align-x: center;
+        --align-y: center;
+        --width: fill-portion 2;
+        --height: fill;
+      }
+
+      .input {
+        --width: fill-portion 11;
+      }
+
+    }
+
+    .rows {
+      --height: fill-portion 5;
+      .row {
+        --width: 380;
+      }
+      .row-selected {
+        --width: 380;
+        border-color: #8ABEB7;
+        border-width: 1px;
+        border-radius: 5%;
+        background: #4c566a;
+        color: #e06c75;
+        --spacing: 3px;
+        --align-y: center;
+
+        .category-icon {
+          --icon-size: 11;
+        }
+
+        .description {
+
+        }
+
+      }
+    }
+
+    .scrollable {
+      .scroller {
+        color: #e06c75;
+        width: 2px;
+      }
+    }
+  }
+}
