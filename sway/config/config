@@ -1,0 +1,47 @@
+# Start
+
+exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec nm-applet --indicator
+exec {{notification}}
+exec_always swaybg --image {{wallpaper}}
+
+### Variables
+set $mod Mod4
+# Home row direction keys, like vim
+set $left h
+set $down j
+set $up k
+set $right l
+
+set $term {{terminal}}
+set $launcher "wofi --show drun"
+
+set $lock "swaylock -c 000000"
+
+# Workspace naming
+
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
+
+# Gaps and egdes
+
+smart_gaps on
+smart_borders on
+default_border pixel 2
+gaps inner 8
+focus_follows_mouse no
+
+include idle
+include inputs
+include bindings
+
+# Status Bar:
+bar swaybar_command waybar
