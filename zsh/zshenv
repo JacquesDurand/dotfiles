@@ -8,3 +8,13 @@ export GTK_USE_PORTAL=0
 # Composer
 
 export PATH="$PATH:$HOME/.config/composer/vendor/bin"
+
+fullscreenshot() {
+  FILE=~/Documents/Pictures/"screenshot-$(date +"%Y-%m-%dT%H:%M:%S").png"
+  grimshot save screen $FILE
+}
+
+screenshot() {
+  FILE=~/Documents/Pictures/"screenshot-$(date +"%Y-%m-%dT%H:%M:%S").png"
+  grimshot save area $FILE
+}
