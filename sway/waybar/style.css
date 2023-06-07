@@ -1,0 +1,141 @@
+* {
+    border: none;
+    font-family: "Fira Code", Roboto, Arial, sans-serif;
+    font-size: 13px;
+    color: #F7B12B;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+window {
+    /*font-weight: bold;*/
+    border-top: 1px solid #8B9F27;
+}
+window#waybar {
+    background: transparent;
+}
+
+window#waybar.empty {
+    background: transparent;
+    padding: 0;
+}
+
+window > box {
+    margin-bottom: 5px;
+    background: transparent;
+    border-bottom: 1px solid #8B9F27;
+    /*border-bottom-right-radius: 20px;*/
+}
+
+/*-----module groups----*/
+.modules-right {
+    background-color: #7D3017;
+    /*margin: 2px 0 0 0;*/
+    padding-left: 10px;
+    margin-top: 1px;
+    margin-right: 2px;
+}
+
+.modules-center {
+    background-color: #7D3017;
+    margin-top: 1px;
+    padding: 0 10px;
+    border-radius: 15px;
+    margin-right: 30px;
+}
+
+.modules-left {
+    /*margin: 2px 0 0 0;*/
+    background-color: #7D3017;
+    margin-top: 1px;
+    margin-left: 1px;
+}
+
+/*-----modules indv----*/
+#workspaces button {
+    /*padding: 1px 5px;*/
+    background-color: transparent;
+    border-radius: 0;
+}
+#workspaces button:first-child {
+    border-left: 1px solid #8B9F27;
+    border-bottom-left-radius: 20px;
+}
+
+#workspaces button:last-child {
+    border-top-right-radius: 20px;
+}
+
+#workspaces button:hover {
+    box-shadow: inherit;
+    background-color: #F7B12B;
+    color: #7D3017;
+}
+
+#workspaces button.focused {
+    background-color: #8B9F27;
+    color: #47691A ;
+}
+
+#clock,
+#battery,
+#cpu,
+#memory,
+#temperature,
+#network,
+#pulseaudio,
+#custom-media,
+#tray,
+#mode,
+#custom-power,
+#custom-menu,
+#bluetooth,
+#backlight,
+#idle_inhibitor {
+    padding: 0 10px;
+    border-left: 1px solid #8B9F27;
+    border-bottom-left-radius: 20px;
+}
+#mode {
+    color: #cc3436;
+    font-weight: bold;
+}
+/*-----Indicators----*/
+#idle_inhibitor.activated {
+    color: #2dcc36;
+}
+#pulseaudio.muted {
+    color: #cc3436;
+}
+#battery.charging {
+    color: #2dcc36;
+}
+#battery.warning:not(.charging) {
+    color: #e6e600;
+}
+#battery.critical:not(.charging) {
+    color: #cc3436;
+}
+#temperature.critical {
+    color: #cc3436;
+}
+
+#tray {
+    border-right: 2px solid #8B9F27;
+    border-radius: 0 20px 0 20px;
+
+}
+
+#custom-arrow1 {
+    font-size: 20pt;
+    color: #8B9F27;
+}
+
+
+/*-----Colors----*/
+/*
+ *rgba(0,85,102,1),#005566 --> Indigo(dye)
+ *rgba(0,43,51,1),#002B33 --> Dark Green
+ *rgba(0,153,153,1),#009999 --> Persian Green
+ *
+ */
