@@ -1,5 +1,11 @@
-#NVM
-source /usr/share/nvm/init-nvm.sh
+# NVM
+[[ -s /usr/share/nvm/init-nvm.sh ]] && source /usr/share/nvm/init-nvm.sh
+
+# Autojump
+
+[[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
+
+
 
 # Antigen
 source /usr/share/zsh/share/antigen.zsh
@@ -13,7 +19,6 @@ antigen apply
 
 fpath=( ~/.zfunc "${fpath[@]}" )
 
-export EDITOR=nvim
 
 prompt off
 eval "$(starship init zsh)"
