@@ -2,14 +2,14 @@
     border: none;
     font-family: "Fira Code", Roboto, Arial, sans-serif;
     font-size: 13px;
-    color: #F7B12B;
+    color: #D3C6AA;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }
 
 window {
     /*font-weight: bold;*/
-    border-top: 1px solid #8B9F27;
+    border-top: 1px solid #83C092;
 }
 window#waybar {
     background: transparent;
@@ -23,13 +23,13 @@ window#waybar.empty {
 window > box {
     margin-bottom: 5px;
     background: transparent;
-    border-bottom: 1px solid #8B9F27;
+    border-bottom: 1px solid #83C092;
     /*border-bottom-right-radius: 20px;*/
 }
 
 /*-----module groups----*/
 .modules-right {
-    background-color: #7D3017;
+    background-color: #2D353B;
     /*margin: 2px 0 0 0;*/
     padding-left: 10px;
     margin-top: 1px;
@@ -37,7 +37,7 @@ window > box {
 }
 
 .modules-center {
-    background-color: #7D3017;
+    background-color: #2D353B;
     margin-top: 1px;
     padding: 0 10px;
     border-radius: 15px;
@@ -46,7 +46,7 @@ window > box {
 
 .modules-left {
     /*margin: 2px 0 0 0;*/
-    background-color: #7D3017;
+    background-color: #2D353B;
     margin-top: 1px;
     margin-left: 1px;
 }
@@ -58,7 +58,7 @@ window > box {
     border-radius: 0;
 }
 #workspaces button:first-child {
-    border-left: 1px solid #8B9F27;
+    border-left: 1px solid #83C092;
     border-bottom-left-radius: 20px;
 }
 
@@ -68,13 +68,13 @@ window > box {
 
 #workspaces button:hover {
     box-shadow: inherit;
-    background-color: #F7B12B;
-    color: #7D3017;
+    background-color: #D3C6AA;
+    color: #2D353B;
 }
 
 #workspaces button.focused {
-    background-color: #8B9F27;
-    color: #47691A ;
+    background-color: #83C092;
+    color: #E69875 ;
 }
 
 #clock,
@@ -93,42 +93,42 @@ window > box {
 #backlight,
 #idle_inhibitor {
     padding: 0 10px;
-    border-left: 1px solid #8B9F27;
+    border-left: 1px solid #83C092;
     border-bottom-left-radius: 20px;
 }
 #mode {
-    color: #cc3436;
+    color: #E67E80;
     font-weight: bold;
 }
 /*-----Indicators----*/
 #idle_inhibitor.activated {
-    color: #2dcc36;
+    color: #A7C080;
 }
 #pulseaudio.muted {
-    color: #cc3436;
+    color: #E67E80;
 }
 #battery.charging {
-    color: #2dcc36;
+    color: #A7C080;
 }
 #battery.warning:not(.charging) {
-    color: #e6e600;
+    color: #DBBC7F;
 }
 #battery.critical:not(.charging) {
-    color: #cc3436;
+    color: #E67E80;
 }
 #temperature.critical {
-    color: #cc3436;
+    color: #E67E80;
 }
 
 #tray {
-    border-right: 2px solid #8B9F27;
+    border-right: 2px solid #83C092;
     border-radius: 0 20px 0 20px;
 
 }
 
 #custom-arrow1 {
     font-size: 20pt;
-    color: #8B9F27;
+    color: #83C092;
 }
 
 

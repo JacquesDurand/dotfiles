@@ -44,7 +44,7 @@
       "on": " "
     },
     "random-icons": {
-      "off": "<span color=\"#f53c3c\"></span> ",
+      "off": "<span color=\"#E67E80\"></span> ",
       "on": " "
     },
     "repeat-icons": {
@@ -94,7 +94,7 @@
     "format-alt": "{time} {icon}",
     // "format-good": "", // An empty format will hide the module
     // "format-full": "",
-    "format-icons": ["", "", "", "", ""]
+    "format-icons": ["<span color=\"#E67E80\"></span>", "<span color=\"#E69875\"></span>", "<span color=\"#DBBC7F\"></span>", "<span color=\"#83C092\"></span>", "<span color=\"#83C092\"></span>"]
   },
   "battery#bat2": {
     "bat": "BAT2"
