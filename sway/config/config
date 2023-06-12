@@ -15,7 +15,7 @@ set $up k
 set $right l
 
 set $term {{terminal}}
-set $launcher "wofi --show drun"
+set $launcher "onagre"
 
 set $lock "swaylock -c 000000"
 

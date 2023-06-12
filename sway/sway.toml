@@ -5,3 +5,5 @@ posthooks = ["sway reload"]
 sway = { source = "sway/config", target = ".config/sway" }
 waybar = { source = "sway/waybar", target = ".config/waybar" }
 mako = { source = "sway/mako", target = ".config/mako" }
+wofi = { source = "sway/wofi", target = ".config/wofi" }
+onagre = { source = "sway/onagre", target = ".config/onagre" }
