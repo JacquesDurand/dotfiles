@@ -75,11 +75,15 @@
     bindsym $mod+Shift+agrave move container to workspace $ws10
 
 # Sound and Brightness
-    bindsym XF86AudioRaiseVolume exec "pactl set-sink-volume @DEFAULT_SINK@ +5%"
-    bindsym XF86AudioLowerVolume exec "pactl set-sink-volume @DEFAULT_SINK@ -5%"
-    bindsym XF86AudioMute exec "pactl set-sink-mute @DEFAULT_SINK@ toggle"
-    bindsym XF86MonBrightnessUp exec "brightnessctl set 10%+"
-    bindsym XF86MonBrightnessDown exec "brightnessctl set 10%-"
+    bindsym XF86AudioRaiseVolume exec swayosd-client --output-volume raise
+    bindsym XF86AudioLowerVolume exec  swayosd-client --output-volume lower
+    bindsym XF86AudioMute exec swayosd-client --output-volume mute-toggle
+    bindsym XF86AudioMicMute exec swayosd-client --input-volume mute-toggle
+    bindsym XF86MonBrightnessUp exec swayosd-client --brightness raise
+    bindsym XF86MonBrightnessDown exec swayosd-client --brightness lower
+
+# Capslock
+    bindsym --release Caps_Lock exec swayosd --caps-lock
 
 ## Screenshots
     bindsym --release Print exec zsh -c screenshot

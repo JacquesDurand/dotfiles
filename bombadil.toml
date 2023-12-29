@@ -14,6 +14,7 @@ vars = ["vars.toml"]
 # and target shall be relative to $HOME directory or absolute.
 [settings.dots]
 alacritty = { source = "alacritty", target = ".config/alacritty" }
+nvim = { source = "editors/nvim", target = ".config/nvim" }
 zshrc = { source = "zsh/zshrc", target = ".zshrc" }
 zshenv = { source = "zsh/zshenv", target = ".zshenv" }
 starship= {source = "starship/starship.toml", target = ".config/starship.toml"}

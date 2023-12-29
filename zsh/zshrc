@@ -5,7 +5,8 @@
 
 [[ -s /etc/profile.d/autojump.sh ]] && source /etc/profile.d/autojump.sh
 
-
+alias vim=nvim;
+alias ovim=vim;
 
 # Antigen
 source /usr/share/zsh/share/antigen.zsh

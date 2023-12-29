@@ -1,10 +1,12 @@
 # Start
 
-exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK
-exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK
+exec systemctl --user import-environment DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP
+exec dbus-update-activation-environment --systemd DISPLAY WAYLAND_DISPLAY SWAYSOCK XDG_CURRENT_DESKTOP=sway
+exec systemctl --user restart pipewire pipewire.socket xdg-desktop-portal xdg-desktop-portal-wlr
 exec nm-applet --indicator
 exec {{notification}}
 exec_always swaybg --image {{wallpaper}}
+exec_always swayosd-server
 
 ### Variables
 set $mod Mod4
