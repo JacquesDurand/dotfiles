@@ -7,3 +7,12 @@ waybar = { source = "sway/waybar", target = ".config/waybar" }
 mako = { source = "sway/mako", target = ".config/mako" }
 wofi = { source = "sway/wofi", target = ".config/wofi" }
 onagre = { source = "sway/onagre", target = ".config/onagre" }
+
+[profiles.sway_noctalia]
+posthooks = ["sway reload && makoctl reload"]
+
+[profiles.sway_noctalia.dots]
+sway = { source = "sway/config_noctalia", target = ".config/sway" }
+noctalia = { source = "sway/noctalia", target = ".config/noctalia" }
+mako = { source = "sway/mako", target = ".config/mako" }
+onagre = { source = "sway/onagre", target = ".config/onagre" }

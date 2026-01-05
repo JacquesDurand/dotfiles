@@ -1,0 +1,4 @@
+wallpaper = "/home/hugo/dotfiles/wallpapers/sway/everforest.jpg"
+
+terminal = "alacritty"
+notification = "mako"
