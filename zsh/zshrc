@@ -7,6 +7,7 @@
 
 alias vim=nvim;
 alias ovim=vim;
+alias ls='lsd';
 
 # Antigen
 source /usr/share/zsh/share/antigen.zsh

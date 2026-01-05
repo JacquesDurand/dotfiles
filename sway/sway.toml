@@ -1,5 +1,5 @@
 [profiles.sway]
-posthooks = ["sway reload"]
+posthooks = ["sway reload && makoctl reload && chmod +x ~/.config/waybar/scripts/get_weather.sh"]
 
 [profiles.sway.dots]
 sway = { source = "sway/config", target = ".config/sway" }

@@ -15,7 +15,7 @@ vars = ["vars.toml"]
 [settings.dots]
 alacritty = { source = "alacritty", target = ".config/alacritty" }
 atuin = { source = "atuin", target = ".config/atuin" }
-nvim = { source = "editors/nvim", target = ".config/nvim" }
+#nvim = { source = "editors/nvim", target = ".config/nvim" }
 zshrc = { source = "zsh/zshrc", target = ".zshrc" }
 zshenv = { source = "zsh/zshenv", target = ".zshenv" }
 starship= {source = "starship/starship.toml", target = ".config/starship.toml"}
